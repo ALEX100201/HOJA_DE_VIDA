@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('../images/tech-background.jpg') no-repeat center center fixed;
+    background-size: 100% 100%; /* Ajusta la imagen al ancho y alto del contenedor */
+    color: #c9d1d9; /* Texto gris claro */
+}
+
+header {
+    background-color: #161b22; /* Fondo oscuro */
+    color: #58a6ff; /* Azul neón */
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #21262d; /* Línea de separación */
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Diseño en columna por defecto */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 1rem; /* Espaciado entre elementos */
+}
+
+@media (min-width: 1000px) {
+    main {
+        flex-direction: row; /* Cambia a filas en pantallas más grandes */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila si no caben */
+        justify-content: center; /* Centra las burbujas horizontalmente */
+    }
+
+    section {
+        flex: 1 1 calc(33.333% - 1rem); /* Cada burbuja ocupa un tercio del ancho con espacio */
+        max-width: calc(33.333% - 1rem); /* Limita el ancho máximo */
+    }
+}
+
+section {
+    background: #161b22; /* Fondo oscuro para las burbujas */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de burbuja */
+    padding: 1.5rem;
+    margin-bottom: 2rem; /* Espaciado entre burbujas */
+    border: 2px solid #21262d; /* Borde sutil */
+}
+
+h2 {
+    color: #58a6ff; /* Azul neón */
+    border-bottom: 2px solid #58a6ff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+p, li {
+    color: #c9d1d9; /* Texto gris claro */
+}
+
+img {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius:  50%;
+    border: 3px solid #58a6ff; /* Borde azul neón */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #161b22; /* Fondo oscuro */
+    color: #58a6ff; /* Azul neón */
+    margin-top: 2rem;
+    border-top: 2px solid #21262d; /* Línea de separación */
+}
+
+a {
+    color: #58a6ff; /* Azul neón */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
